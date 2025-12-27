@@ -210,19 +210,22 @@ body {
     align-items: center;
 }
 
+.challenges,
+.vendor_management,
+.impact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .challenge1,
 .challenge2,
-.vendor_management
- {
+.vendor_management {
     display: flex;
     flex-direction: row nowrap;
     justify-content: space-around;
     align-items: flex-start;
-}
-
-.challenge1_left,
-.challenge2_left {
-    /*border: 2px solid red;*/
 }
 
 .overview_left,
@@ -238,16 +241,10 @@ body {
     list-style: none;
 }
 
-.challenges, .vendor_management{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .challenges_title,
 .vendor_title,
 .impact_title {
+    align-self: center;
     text-align: center;
 }
 
@@ -289,26 +286,18 @@ td {
     margin-top: 4rem;
 }
 
-.impact{
+.impact {
     margin-top: 4rem;
     padding-bottom: 4rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
 }
 
-.impact_title{
+.impact_title {
     align-self: center;
-    text-align:center;
+    text-align: center;
 }
+
 .impact_content {
     display: flex;
     flex-direction: row nowrap;
-    justfiy-content:flex-start;
-}
-
-.lessons_learned_right{
-    justify-self:flex-end;
+    justfiy-content: flex-start;
 }
